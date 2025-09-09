@@ -1,17 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main()
-{
+int main() {
 
-    int time, overtime_pay, i;
+    int hours, overtime_pay;
 
-    for (i = 0; i <= 10;)
+    for (int i = 1 ; i<=10 ; i++)
     {
-        printf("Enter the number of hours the person is doing overtime: ");
-        scanf("%d", &time);
-        overtime_pay = 12 * time;
-        printf("The pay for working %d hours overime is %d\n", time, overtime_pay);
-        i = i + 1;
+        printf("Enter the number of hours the emplyee has wored in a week: \n");
+        scanf("%d", &hours);
+
+        if (hours <= 40)
+        {
+            printf("No overtime, therefore no extra pay\n");
+        }
+
+        else 
+        {
+            overtime_pay = 12 * (hours-40);
+            printf("Extra pay is %d\n", overtime_pay);
+        }
     }
 
     return 0;

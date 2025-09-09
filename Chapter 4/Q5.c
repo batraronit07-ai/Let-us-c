@@ -1,21 +1,20 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main()
-{
+int main() {
 
-    int num, a, b, c, sum;
+    int i, a, b, c, sum;
 
-    for (num = 0; num <= 500; num = num + 1)
+    for (i = 0 ; i<=500 ; i++)
     {
-        a = num / 100;
-        b = (num / 10) % 10;
-        c = num % 10;
+        a = i / 100;
+        b = ( i / 10 ) % 10;
+        c = i % 10;
 
-        sum = a * a * a + b * b * b + c * c * c;
+        sum = a * a * a + b * b * b + c * c * c ;
 
-        if (sum == num)
+        if (sum == i)
         {
-            printf("The number %d is an armstron number\n", num);
+            printf("%d is an armstrong number\n", i);
         }
     }
     return 0;

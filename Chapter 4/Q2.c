@@ -1,28 +1,20 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main()
-{
+int main() {
 
     int number, factorial;
 
-    printf("Enter the number whose factorial you want: ");
+
+    printf("Enter the number whose factorial is to be caculated: ");
     scanf("%d", &number);
 
-    if (number < 0)
+    factorial = number;
+
+    for (int i = 1 ; i<number ; i++)
     {
-        printf("The factorial can't be calculated");
+        factorial = factorial * i;
     }
 
-    else
-    {
-        factorial = number * (number-1);
-        for (int i = 1; i < (number-1);)
-        {
-           factorial = factorial * i;
-            i = i + 1;
-        }
-
-        printf("The factorial of %d is %d", number, factorial);
-    }
+    printf("factorial of %d is %d", number, factorial);
     return 0;
 }

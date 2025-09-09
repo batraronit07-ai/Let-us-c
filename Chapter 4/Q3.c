@@ -3,16 +3,17 @@
 
 int main() {
 
-    int a, b, power;
+    int num1, num2, result;
 
-    printf("Enter the first number: ");
-    scanf("%d", &a);
+    printf("enter first number: ");
+    scanf("%d", &num1);
 
-    printf("Enter the second number: ");
-    scanf("%d", &b);
+    printf("enter second number: ");
+    scanf("%d", &num2);
 
-    power = pow(a,b);
+    result = pow(num1, num2);
 
-    printf("The value of a raised to the power of b is: %d", power);
+    printf("The value of %d raised to power %d is %d", num1, num2, result);
     return 0;
+
 }

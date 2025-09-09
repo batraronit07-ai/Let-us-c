@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main()
-{
+int main() {
 
     int i;
-
-    for (i = 0; i <= 255; i = i + 1)
+   
+    i = 0;
+    while (i<=255)
     {
-        printf("ch : %c - ASCII value: %d\n", i, i);
+        printf("char: %c - ASCII value = %d\n", i, i);
+        i = i+1;
     }
 
     return 0;
