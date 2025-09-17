@@ -18,6 +18,7 @@ int main() {
         sum = sum + series;
     }
 
+ 
     printf("The sum of first 7 terms of thsi series is %f", sum);
     return 0;
 }
